@@ -1,5 +1,5 @@
 <?php
-include ROOT . DS . 'models/movie.php';
+include ROOT . DS . 'models' . DS . 'movie.php';
 include ROOT . DS . 'db.php';
 ?>
 
