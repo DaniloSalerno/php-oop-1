@@ -1,3 +1,8 @@
+<?php
+include ROOT . DS . 'models/movie.php';
+include ROOT . DS . 'db.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

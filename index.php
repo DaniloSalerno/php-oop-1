@@ -19,9 +19,12 @@ mettendo ciascuna classe nel proprio file e magari raggruppare tutte le classi i
 
 organizzando il layout dividendo la struttura ed i contenuti in file e parziali dedicati.  -->
 <?php
-require __DIR__ . '/models/movie.php';
-require __DIR__ . '/db.php';
-require __DIR__ . '/partials/head.php';
-require __DIR__ . '/partials/main.php';
-require __DIR__ . '/partials/footer.php'
+
+define('ROOT', __DIR__); // questa creata in index.php puntera' sempre alla cartella base del nostro progetto e sara' piu' facile ragionare su come aggiungere gli altri file da altre cartelle, partendo sempre dalla base (appunto dalla ROOT)
+
+define('DS', DIRECTORY_SEPARATOR); // questa in base al sistema aggiungera' il corretto slash / windows, \ linux
+
+require_once ROOT . DS . 'partials' . DS . 'head.php';
+require_once ROOT . DS . 'partials' . DS . 'main.php';
+require_once ROOT . DS . 'partials' . DS . 'footer.php';
 ?>
