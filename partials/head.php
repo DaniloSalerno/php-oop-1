@@ -17,3 +17,26 @@ include './db.php';
 </head>
 
 <body>
+
+    <header class="shadow">
+
+        <nav class="navbar navbar-expand-sm navbar-light">
+
+            <div class="container-fluid">
+
+                <div class="navbar-nav">
+
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Lista Film</a>
+                    <a class="nav-link" aria-current="page" href="#">Contatti</a>
+                    <a class="nav-link" aria-current="page" href="#">Supporto</a>
+                    <a class="nav-link" aria-current="page" href="#">Altro</a>
+
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>

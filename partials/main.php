@@ -1,22 +1,37 @@
 <main>
 
-    <div class="container">
+    <div class="container mt-5">
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
 
-            <?php foreach ($movies as $movie) : ?>
+            <?php foreach ($movies as $key => $movie) : ?>
 
                 <div class="col">
 
-                    <div class="card">
+                    <div class="card border-0">
 
-                        <div class="card-body">
-                            <h4>Titolo: <?= $movie->title ?> </h4>
-                            <div>Voto: <?= $movie->rating ?> </div>
-                            <div>Lingua: <?= $movie->language ?> </div>
-                            <div>Anno: <?= $movie->year ?> </div>
+                        <img height="200" src="https://picsum.photos/200/300?random=<?= $key + 1 ?>">
+
+                        <div class="card-body d-flex flex-column gap-2">
+
+                            <h4 class="fw-bold">
+                                Titolo: <?= $movie->title ?>
+                            </h4>
+
                             <div>
-                                <span>Generi:</span>
+                                <span class="fw-bold">Voto:</span> <?= $movie->rating ?>
+                            </div>
+
+                            <div>
+                                <span class="fw-bold">Lingua:</span> <?= $movie->language ?>
+                            </div>
+
+                            <div>
+                                <span class="fw-bold">Anno:</span> <?= $movie->year ?>
+                            </div>
+
+                            <div>
+                                <span class="fw-bold">Generi:</span>
                                 <ul>
                                     <?php foreach ($movie->genres as $genre) : ?>
                                         <li> <?= $genre ?> </li>

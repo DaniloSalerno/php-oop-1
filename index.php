@@ -19,7 +19,7 @@ mettendo ciascuna classe nel proprio file e magari raggruppare tutte le classi i
 
 organizzando il layout dividendo la struttura ed i contenuti in file e parziali dedicati.  -->
 <?php
-require './partials/head.php';
-require './partials/main.php';
-require './partials/footer.php'
+require __DIR__ . './partials/head.php';
+require __DIR__ . './partials/main.php';
+require __DIR__ . './partials/footer.php'
 ?>
