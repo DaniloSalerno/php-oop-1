@@ -5,4 +5,4 @@ $movies = [
 ];
 
 //Aggiungiamo un nuovo genere al 'miovie' con indice 0
-$movies[0]->addGenres('action');
+$movies[0]->addGenres('Action');
