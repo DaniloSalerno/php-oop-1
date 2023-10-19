@@ -1,11 +1,3 @@
-<?php
-
-include './models/movie.php';
-include './db.php';
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 

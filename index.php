@@ -19,6 +19,8 @@ mettendo ciascuna classe nel proprio file e magari raggruppare tutte le classi i
 
 organizzando il layout dividendo la struttura ed i contenuti in file e parziali dedicati.  -->
 <?php
+require __DIR__ . './models/movie.php';
+require __DIR__ . './db.php';
 require __DIR__ . './partials/head.php';
 require __DIR__ . './partials/main.php';
 require __DIR__ . './partials/footer.php'
