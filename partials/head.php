@@ -18,7 +18,7 @@ include './db.php';
 
 <body>
 
-    <header class="shadow">
+    <header class="shadow position-sticky top-0 bg-white z-2">
 
         <nav class="navbar navbar-expand-sm navbar-light">
 
