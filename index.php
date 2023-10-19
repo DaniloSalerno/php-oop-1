@@ -21,6 +21,9 @@ organizzando il layout dividendo la struttura ed i contenuti in file e parziali 
 
 <?php
 
-include './models/movie.php'
+include './models/movie.php';
+include './db.php';
+
+var_dump($movies)
 
 ?>
